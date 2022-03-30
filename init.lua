@@ -19,7 +19,8 @@ local modules = {
   "user.indentline",
   "user.alpha",
   "user.whichkey",
-  "user.autocommands"
+  "user.autocommands",
+  "user.markdown-preview"
 }
 
 for k, v in pairs(modules) do
