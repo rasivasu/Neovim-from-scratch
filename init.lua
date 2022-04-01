@@ -11,7 +11,7 @@ local modules = {
   "user.comment",
   "user.gitsigns",
   "user.nvim-tree",
-  "user.bufferline",
+--  "user.bufferline",
   "user.lualine",
   "user.toggleterm",
   "user.project",
@@ -20,7 +20,8 @@ local modules = {
   "user.alpha",
   "user.whichkey",
   "user.autocommands",
-  "user.markdown-preview"
+  "user.markdown-preview",
+  "user.vim-sneak"
 }
 
 for k, v in pairs(modules) do

@@ -1,6 +1,8 @@
 vim.cmd [[
 try
-  colorscheme everforest
+  colorscheme tokyonight
+  let g:tokyonight_style="night"
+  set background=dark
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

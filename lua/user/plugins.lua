@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
   -- use "akinsho/bufferline.nvim"
-  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+  -- use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
@@ -65,6 +65,7 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "sainnhe/everforest"
   use "folke/tokyonight.nvim"
+  use "morhetz/gruvbox"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -99,6 +100,8 @@ return packer.startup(function(use)
 
   -- Markdown
   use "iamcco/markdown-preview.nvim"
+  use "justinmk/vim-sneak"
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
