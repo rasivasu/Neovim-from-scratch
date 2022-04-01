@@ -100,7 +100,10 @@ return packer.startup(function(use)
 
   -- Markdown
   use "iamcco/markdown-preview.nvim"
+
+  -- Move around
   use "justinmk/vim-sneak"
+  use "unblevable/quick-scope"
 
 
   -- Automatically set up your configuration after cloning packer.nvim

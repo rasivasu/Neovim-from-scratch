@@ -14,7 +14,7 @@ local diagnostics = {
 	symbols = { error = " ", warn = " " },
 	colored = false,
 	update_in_insert = false,
-	always_visible = true,
+	always_visible = false,
 }
 
 local diff = {
@@ -26,6 +26,7 @@ local diff = {
 
 local mode = {
 	"mode",
+  icons_enabled = true,
 	fmt = function(str)
 		return "-- " .. str .. " --"
 	end,
@@ -33,14 +34,14 @@ local mode = {
 
 local filetype = {
 	"filetype",
-	icons_enabled = false,
+	icons_enabled = true,
 	icon = nil,
 }
 
 local branch = {
 	"branch",
 	icons_enabled = true,
-	icon = "",
+  icon = '',
 }
 
 local location = {
@@ -66,10 +67,13 @@ lualine.setup({
 	options = {
 		icons_enabled = true,
 		theme = "auto",
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
+		--component_separators = { left = "", right = "" },
+		--section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
+    globalstatus = false,
 	},
 	sections = {
 		lualine_a = { branch, diagnostics },
