@@ -66,6 +66,7 @@ return packer.startup(function(use)
   use "sainnhe/everforest"
   use "folke/tokyonight.nvim"
   use "morhetz/gruvbox"
+  use "NLKNguyen/papercolor-theme"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -100,10 +101,12 @@ return packer.startup(function(use)
 
   -- Markdown
   use "iamcco/markdown-preview.nvim"
+  use "masukomi/vim-markdown-folding"
 
   -- Move around
-  use "justinmk/vim-sneak"
-  use "unblevable/quick-scope"
+  --use "justinmk/vim-sneak"
+  --use "unblevable/quick-scope"
+  use "ggandor/lightspeed.nvim"
 
 
   -- Automatically set up your configuration after cloning packer.nvim
