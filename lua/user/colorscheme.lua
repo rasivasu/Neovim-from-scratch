@@ -1,10 +1,10 @@
 vim.cmd [[
-try
-  colorscheme tokyonight
-  let g:tokyonight_style="night"
-  set background=dark
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-  set background=dark
-endtry
+  if exists('g:neovide')
+    set background=light
+    let g:everforest_background="soft"
+    colorscheme everforest
+  else
+    let g:tokyonight_style="night"
+    colorscheme tokyonight
+  endif
 ]]
