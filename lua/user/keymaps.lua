@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -42,7 +40,7 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Miscellaneous actions
 keymap("n", "<C-s>", ":set hlsearch!<CR>", opts)
 keymap("n", "<leader>r", ":luafile $MYVIMRC<CR>", opts)
-keymap("i", "ii", "<ESC>", opts) -- Insert -- Press jk fast to ente
+keymap("i", "kj", "<ESC>", opts) -- Insert -- Press jk fast to ente
 
 -- Visual --
 -- Stay in indent mode
