@@ -1,3 +1,4 @@
-set background=light
-let g:everforest_background="soft"
-colorscheme everforest
+" set background=dark
+" let g:everforest_background="soft"
+let g:tokyonight_style="night"
+colorscheme tokyonight
