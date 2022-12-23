@@ -40,7 +40,11 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Miscellaneous actions
 keymap("n", "<C-s>", ":set hlsearch!<CR>", opts)
 keymap("n", "<leader>r", ":luafile $MYVIMRC<CR>", opts)
-keymap("i", "kj", "<ESC>", opts) -- Insert -- Press jk fast to ente
+-- Insert --
+--
+-- Press jk fast to exit insert mode 
+keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
