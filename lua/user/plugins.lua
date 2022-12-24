@@ -47,12 +47,20 @@ return packer.startup(function(use)
 	use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 	use "numToStr/Comment.nvim" -- Easily comment stuff
 	use "kyazdani42/nvim-web-devicons"
-	use "kyazdani42/nvim-tree.lua"
-	-- use "akinsho/bufferline.nvim"
-	-- use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+	use { 
+    "kyazdani42/nvim-tree.lua",
+    requires = {
+      "nvim-tree/nvim-web-devicons"
+    }
+  }
+  use {
+    'akinsho/bufferline.nvim', 
+    tag = "v3.*", 
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
 	use "moll/vim-bbye"
 	use "nvim-lualine/lualine.nvim"
-	use "akinsho/toggleterm.nvim"
+  use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
 	use "ahmedkhalf/project.nvim"
 	use "lewis6991/impatient.nvim"
 	use "lukas-reineke/indent-blankline.nvim"
