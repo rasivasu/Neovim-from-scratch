@@ -21,7 +21,7 @@ local modules = {
   "user.whichkey",
   "user.autocommands",
   "user.markdown-preview",
-  "user.vim-sneak"
+--  "user.vim-sneak"
 }
 
 for k, v in pairs(modules) do
