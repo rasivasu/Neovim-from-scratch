@@ -3,6 +3,8 @@ if not status_ok then
   return
 end
 
+telescope.load_extension('project')
+
 local actions = require "telescope.actions"
 
 telescope.setup {
@@ -92,5 +94,15 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+    project = {
+      base_dirs = {
+        '~/Library/Mobile Documents/iCloud~co~fluder~fsnotes/Documents'
+      },
+      hidden_files = true,
+      theme = "dropdown",
+      order_by = "asc",
+      search_by = "title",
+      sync_with_nvim_tree = true,
+    }
   },
 }
